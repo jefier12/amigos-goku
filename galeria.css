@@ -4,7 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root{
+  --fondo:url(img/fcb35fc65a3188f2ee006e57a4183e92.png);
+  --sombra:#000;
+  --titulo:#ffd901df;
+  --boton:#6d6bdc;
+  --color-text-boton:#ffffff;
+  --card:radial-gradient(#2992e7f9, #f54bef);
+}
 body{
     margin: 0 auto;
     background-size: cover;
@@ -12,31 +19,30 @@ body{
     font-family: "Roboto", sans-serif;
     font-weight: 100px;
     font-style: normal;
-    background-image: url(img/fcb35fc65a3188f2ee006e57a4183e92.png);
+    background-image: var(--fondo);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 .card{
-    background: rgba(245, 199, 101, 0.644);
+    background: var(--card);
     width: 300px;
     height: 520px;
     margin: 20px 20px 20px 20px;
-    box-shadow: 2px 10px 15px #000;
+    box-shadow: 2px 10px 15px var(--sombra);
     border-radius: 10px;
     padding: 0 0 30px;
     display: inline-block;
-    
 }
 .img{
     width: 100%;
     display: block;
     object-fit: contain;
-    height: 340px;
+    height: 300px;
     border-radius: 10px 10px 0 0;
     filter: drop-shadow(0px 0px 10px );
-
+    padding-top: 20px;
 }
 
 .contenedor{
@@ -44,11 +50,10 @@ body{
     margin: 0 auto;
     max-width: 1110px;
     background-size: cover;
-
 }
 
 .titulo{
-    color: gold;
+    color: var(--titulo);
     margin: 10px 0;
     font-size: 24px;
     text-align: center;
@@ -63,9 +68,9 @@ body{
 }
 
 .boton{
-    width: 100px;
-  color: white;
-  background: rgb(79, 72, 74);
+  width: 100px;
+  color: var(--color-boton);
+  background:var(--boton);
   display: block;
   padding: 13px 0;
   text-align: center;
