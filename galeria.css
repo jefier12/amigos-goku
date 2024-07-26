@@ -13,6 +13,7 @@
   --card:radial-gradient(#2992e7f9, #f54bef);
   --font-text:15px;
   --font-tit:24px;
+  --alin:center;
 }
 body{
     margin: 0 auto;
@@ -43,7 +44,7 @@ body{
     object-fit: contain;
     height: 300px;
     border-radius: 10px 10px 0 0;
-    filter: drop-shadow(0px 0px 10px );
+    filter: drop-shadow(0px -10px 10px );
     padding-top: 20px;
 }
 
@@ -58,14 +59,14 @@ body{
     color: var(--titulo);
     margin: 10px 0;
     font-size: 24px;
-    text-align: center;
+    text-align: var(--alin);
 
 }
 
 .texto{
     padding: 0 20px 20px;
     font-size: var(--font-text);
-    text-align: center;
+    text-align: var(--alin);
 
 }
 
